@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/lab-quizzApp-3-react" element={<HomeComponent />} />
+        <Route path="/lab-quizzApp-3-react/" element={<HomeComponent />} />
         <Route path="/quiz" element={<QuizComponent quizData={QuizData} />} />
       </Routes>
     </Router>
