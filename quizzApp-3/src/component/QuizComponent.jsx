@@ -80,7 +80,7 @@ class QuizComponent extends Component {
                 <p>Total Number of Questions: {quizData.length}</p>
                 <p>No.of Correct Questions: {score}</p>
                 <p>No.of Wrong Questions: {(quizData.length) - (score)}</p>
-                <Link to="/"><button className='restart' onClick={this.handleRestart}>Restart</button></Link>
+                <Link to="/lab-quizzApp-3-react"><button className='restart' onClick={this.handleRestart}>Restart</button></Link>
               </div>
             ) : (
               <div>
@@ -101,7 +101,7 @@ class QuizComponent extends Component {
                 <p>Your Score: {score}</p>
                 <button className='previous' onClick={this.handlePreviousQuestion} disabled={currentQuestionIndex === 0}> Previous </button>
                 <button className='next' onClick={this.handleNextQuestion}> Next </button>
-                <Link to="/"> <button className='quit' onClick={this.handleQuit}> Quit </button> </Link>
+                <Link to="/lab-quizzApp-3-react"> <button className='quit' onClick={this.handleQuit}> Quit </button> </Link>
                 <button className='Finish' onClick={this.handleFinish}> Finish </button>
               </div>
             )}
