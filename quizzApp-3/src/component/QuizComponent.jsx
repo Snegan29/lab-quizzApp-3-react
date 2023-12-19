@@ -34,7 +34,6 @@ class QuizComponent extends Component {
     const { currentQuestionIndex, selectedOption } = this.state;
 
     if (currentQuestionIndex === quizData.length - 1) {
-      // If it's the last question, set quizFinished to true
       this.setState({ quizFinished: true });
     } else {
       this.setState({
